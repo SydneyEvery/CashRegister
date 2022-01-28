@@ -1,10 +1,21 @@
+package Model;
+
 public abstract class Product {
 
+    private String productType;
     private double price;
     private String description;
     private int fluidOunces;
     private double weight;
     private String sku;
+
+    public String getProductType() {
+        return productType;
+    }
+
+    public void setProductType(String productType) {
+        this.productType = productType;
+    }
 
     public void setPrice(double price) {
         this.price = price;
